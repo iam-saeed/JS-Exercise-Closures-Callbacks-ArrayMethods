@@ -48,16 +48,16 @@ function processFirstItem(stringList, callback) {
  * [2] Invoking `processLength` passing `[]` and `(num) => "There are " + num`,
  * should return "There are 0".
 */
-function processLength(list, callback) 
-{
-  /* CODE HERE */
-  return callback(list.length);
-}
-let result = processLength(['foo', 'bar'], (num) => + 1000);
-console.log(result);
+// function processLength(list, callback) 
+// {
+//   /* CODE HERE */
+//   return callback(list.length);
+// }
+// let result = processLength(['foo', 'bar'], (num) => + 1000);
+// console.log(result);
 
-let result = processLength([], (num) => 'There are' + num);
-console.log(result);
+// let result = processLength([], (num) => 'There are' + num);
+// console.log(result);
 
 
 /**
@@ -74,16 +74,16 @@ console.log(result);
  * Invoking `processLastItem` passing `['foo', 'bar']` and `(str) => str + str`,
  * should return 'barbar'.
 */
-function processLastItem(stringList, callback) 
-{
-/* CODE HERE */
+// function processLastItem(stringList, callback) 
+// {
+// /* CODE HERE */
 
-  return callback(stringList[stringList.length - 1]);
+//   return callback(stringList[stringList.length - 1]);
 
-}
+// }
 
-let result = processLastItem(['foo', 'bar'], (str) => str + str);
-console.log(result);
+// let result = processLastItem(['foo', 'bar'], (str) => str + str);
+// console.log(result);
 
 /**
  * ### Challenge `processSum`
@@ -103,13 +103,13 @@ console.log(result);
  * [2] Invoking `processSum` passing `-5`, '-1', and `(num) => num + 1000`,
  * should return 994.
 */
-function processSum(num1, num2, callback) 
-{
-  /* CODE HERE */
-  return callback(num1 + num2);
-}
-let result = processSum(-5, -1, (num) => num + 1000);
-console.log(result);
+// function processSum(num1, num2, callback) 
+// {
+//   /* CODE HERE */
+//   return callback(num1 + num2);
+// }
+// let result = processSum(-5, -1, (num) => num + 1000);
+// console.log(result);
 /**
  * ### Challenge `processProduct`
  * 
@@ -128,9 +128,12 @@ console.log(result);
  * [2] Invoking `processProduct` passing 25 and 0 and `(num) => num + 1000`,
  * should return 1000.
 */
-function processProduct(/* CODE HERE */) {
+function processProduct(num1, num2, callback) {
   /* CODE HERE */
+  return callback(num1 * num2);
 }
+let result = processProduct(25, 0, (num) => num + 1000);
+console.log(result); 
 
 /**
  * ### Challenge `processDuplicateFree`
