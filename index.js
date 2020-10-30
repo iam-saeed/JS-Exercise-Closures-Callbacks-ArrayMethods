@@ -73,9 +73,15 @@ console.log(result);
  * Invoking `processLastItem` passing `['foo', 'bar']` and `(str) => str + str`,
  * should return 'barbar'.
 */
-function processLastItem(/* CODE HERE */) {
-  /* CODE HERE */
+function processLastItem(stringList, callback) {
+/* CODE HERE */
+
+  return callback(stringList[stringList.length - 1]);
+
 }
+
+let result = processLastItem(['foo', 'bar'], (str) => str + str);
+console.log(result);
 
 /**
  * ### Challenge `processSum`
